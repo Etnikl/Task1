@@ -1,0 +1,9 @@
+@font-face {
+    font-family: Lynstone;
+    src: url(../fonts/Lynstone/Lynstone/Lynstone.otf);
+}
+body {
+    font-family: 'Lynstone', Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
