@@ -1,0 +1,115 @@
+@import url(./colorstyle.css);
+
+.banner1,
+.banner2,
+.banner3 {
+    border-radius: inherit;
+    width: 100%;
+}
+.upside-slider img {
+    width: 120%;
+    animation: zoom-out 15s linear infinite;
+    position: absolute;
+    top: 0px;
+    display: grid;
+}
+
+.text-box {
+    position: absolute;
+    width: 100%;
+    top: 60%;
+    left: 5%;
+    color: white;
+    animation: textUp 7s linear infinite;
+}
+
+.text-box h1 {
+    display: inline-flex;
+    font-size: 2rem;
+    background-color: #f3f3f3;
+    padding-left: 14px;
+    color: #f36f21;
+}
+.text-box h1 span {
+    color: #f3f3f3;
+    background-color: #f36f21;
+    padding: 0px 14px;
+}
+
+@keyframes textUp {
+    0%
+    {transform: translateY(0px);}
+
+    100%
+    {transform: translateY(20px);}
+
+}
+
+.slide1 {
+    animation: fade1 15s linear infinite;
+}
+.slide2 {
+    animation: fade2 15s linear infinite;
+}
+.slide3 {
+    animation: fade3 15s linear infinite;
+}
+
+
+@keyframes fade1 {
+    0%
+    {visibility: visible;}
+
+    25%
+    {visibility: hidden;}
+
+    50%
+    {visibility: hidden;}
+
+    75%
+    {visibility: hidden;}
+
+    100%
+    {visibility: visible;}
+
+}
+
+@keyframes fade2 {
+    0%
+    {visibility: hidden;}
+
+    25%
+    {visibility: hidden;}
+
+    50%
+    {visibility: visible;}
+
+    75%
+    {visibility: hidden;}
+
+    100%
+    {visibility: hidden;}
+
+}
+
+@keyframes fade3 {
+    0%
+    {visibility: hidden;}
+
+    25%
+    {visibility: hidden;}
+
+    50%
+    {visibility: hidden;}
+
+    75%
+    {visibility: visible;}
+
+    100%
+    {visibility: hidden;}
+}
+
+@keyframes zoom-out {
+    100%
+    {width: 100%;}
+}
